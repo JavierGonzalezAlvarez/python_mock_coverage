@@ -1,0 +1,10 @@
+[tool.coverage.run]
+branch = true
+source = ["."]
+omit = ["*test*"]
+concurrency = ["thread"]
+
+[tool.coverage.report]
+exclude_lines = ["if __name__ == .__main__.:"]
+omit = ["*test*"]
+
